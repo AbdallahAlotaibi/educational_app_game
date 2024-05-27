@@ -64,4 +64,16 @@ flutter {
     source '../..'
 }
 
+plugins {
+  id "org.sonarqube" version "4.4.1.3373"
+}
+
+sonar {
+  properties {
+    property "sonar.projectKey", "AbdallahAlotaibi_educational_app_game"
+    property "sonar.organization", "abdallahalotaibi"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
+}
+
 dependencies {}
